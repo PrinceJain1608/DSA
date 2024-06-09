@@ -27,8 +27,8 @@ int main(){
   for(int i=0;i<size;i++){
     cin>>a[i];
   }
-  int larger=maxx(a,5);
-  int smaller=minn(a,5);
+  int larger=maxx(a,size);
+  int smaller=minn(a,size);
   cout<<"max value:"<<larger<<endl;
   cout<<"min value:"<<smaller<<endl;
 }
