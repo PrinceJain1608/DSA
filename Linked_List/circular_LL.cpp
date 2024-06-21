@@ -1,4 +1,5 @@
 #include<iostream>
+#include<map>
 using namespace std;
 class Node{
   public:
@@ -83,6 +84,7 @@ void deleteNode(Node *&tail,int value){
 
 int main(){
   Node *tail=NULL;
+  Node *head=NULL;
   insertNode(tail,3,5);
   print(tail);
   insertNode(tail,5,7);
@@ -99,4 +101,5 @@ int main(){
   print(tail);
   deleteNode(tail,7);
   print(tail);
+  
 }
