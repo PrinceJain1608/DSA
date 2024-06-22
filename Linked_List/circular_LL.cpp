@@ -81,6 +81,19 @@ void deleteNode(Node *&tail,int value){
     delete curr;
   }
 }
+bool isCircular(Node *head){
+    if(head==NULL){
+      return true;
+    }
+    Node *temp=head->next;
+    while(temp!=NULL && temp!=head){
+      temp=temp->next;
+    }
+    if(head==temp){
+      return true;
+    }
+    return false;
+}
 
 int main(){
   Node *tail=NULL;
@@ -101,5 +114,10 @@ int main(){
   print(tail);
   deleteNode(tail,7);
   print(tail);
-  
+  if(isCircular(head)){
+    cout<<"LL is cricular";
+  }
+  else{
+    cout<<"LL is not circular";
+  }
 }

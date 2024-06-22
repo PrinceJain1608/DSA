@@ -153,6 +153,19 @@ Node *removeLoop(Node *head){
   temp->next=NULL;
   return head;
 }
+bool isCircular(Node *head){
+    if(head==NULL){
+      return true;
+    }
+    Node *temp=head->next;
+    while(temp!=NULL && temp!=head){
+      temp=temp->next;
+    }
+    if(head==temp){
+      return true;
+    }
+    return false;
+}
 int main(){
   Node *node1=new Node(10);
   // cout<<node1->data<<endl;
