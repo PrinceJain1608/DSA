@@ -28,5 +28,5 @@ int main(){
   int x=bitsA(a);
   int y=bitsB(b);
   int z=x+y;
-  cout<<"total set bits:"<<z;
+  cout<<"total set bits:"<<z<<endl;
 }
