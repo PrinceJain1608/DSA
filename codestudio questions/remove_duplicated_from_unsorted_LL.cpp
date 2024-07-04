@@ -1,6 +1,6 @@
 Node *removeDuplicates(Node *head)
 {
-      Node* curr = head;
+    Node* curr = head;
     Node* prev = NULL;
     unordered_map<int, bool> visited;
     

@@ -34,7 +34,7 @@ Node* Merge(Node* left,Node* right)
 	}
 	while(right!=NULL)
 	{
-		    temp->child=right;
+		  temp->child=right;
 			temp=right;
 			right=right->child;    
 	}

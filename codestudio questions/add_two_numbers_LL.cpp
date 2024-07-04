@@ -50,7 +50,6 @@ Node *add(Node *num1, Node *num2){
         }
         return ansHead;
     }
-     return ansHead;
 }
 
 
