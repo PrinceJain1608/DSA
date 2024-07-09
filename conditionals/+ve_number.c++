@@ -5,10 +5,10 @@ int main(){
   cout<<"enter value of a:";
   cin>>a;
   if(a>0){
-    cout<<a<<" is positive number";
+    cout<<a<<" is +ve number";
   }
   else if(a<0){
-    cout<<a<<" is negative number";
+    cout<<a<<" is -ve number";
   }
   else{
     cout<<a<<" is zero";
