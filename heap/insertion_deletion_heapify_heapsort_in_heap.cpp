@@ -7,7 +7,7 @@ class heap{
   int arr[100];
   int size;
   heap(){
-    arr[0]-1;
+    arr[0]=-1;
     size=0;
   }
   void insert(int val){
@@ -58,6 +58,11 @@ void print(){
   }
 };
 
+void printHeap(int arr[],int n){
+  for(int i=1;i<=n;i++){
+    cout<<arr[i]<<" ";
+  }cout<<endl;
+}
 int main(){
   heap h;
   h.insert(50);
@@ -67,7 +72,7 @@ int main(){
   h.insert(54);
   h.print();
   h.deleteFromHeap();
-  h.print();
+  h.print(); 
 }
 
 // TC- O(log n)
